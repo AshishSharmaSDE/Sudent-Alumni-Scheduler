@@ -55,13 +55,13 @@ module.exports.getAlumni = function(callback){
 }
 
 module.exports.findByUsernameAndUpdate = function(username, callback){
-	/*User.getUserByUsername(username, function(err, docs){
+	User.getUserByUsername(username, function(err, docs){
 		if(err) throw err;
 		else {
 			var slots = docs.slots_booked - 1
 			var query = { slots_booked : slots}
 			User.findByIdAndUpdate(docs[0]._id, query, callback);
 		}
-	});*/
+	});
 	console.log(username);
 }
